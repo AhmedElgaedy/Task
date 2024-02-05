@@ -1,0 +1,19 @@
+{
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "definition": "nullable"
+    },
+    "priority": {
+      "type": "enum:low,medium,high",
+      "definition": "nullable|default:medium"
+    },
+    "is_done": {
+      "type": "boolean",
+      "definition": "default:false"
+    }
+  }
+}
