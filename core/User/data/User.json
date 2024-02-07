@@ -1,0 +1,26 @@
+{
+  "attributes": {
+
+    "first_name": {
+      "type": "string"
+    },
+
+    "last_name": {
+      "type": "text"
+    },
+
+    "password": {
+      "type": "string"
+    },
+
+    "e-mail": {
+      "type": "string"
+      
+    },
+
+    "phone": {
+      "type": "string"
+    }
+  }
+
+}

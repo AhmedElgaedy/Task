@@ -1,5 +1,7 @@
 <?php
 
+use Core\User\Models\UserAuth;
+
 return [
 
     /*
@@ -40,6 +42,16 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'user'=>[
+            'driver' => 'session',
+            'provider'=> 'users',
+        ],
+
+        'user-api' =>[
+            'driver' => 'sanctum',
+            'provider' => 'users',
+        ],
     ],
 
     /*
@@ -62,7 +74,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => UserAuth::class,
         ],
 
         // 'users' => [
